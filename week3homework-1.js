@@ -51,7 +51,7 @@ function servePizza() {
 
 // Call each function and (starting with preparePizza) use the returned value from the previous function as its input
 
-preparePizza(servePizza);
+preparePizza(servePizza());
 
 // Figure out how to add "and" before the last topping in a list of toppings so when we list toppings it is more grammatically correct. You could create a listToppings function that stores the functionality, and call the function each time we list toppings in a function.
 // i.e. "Our toppings are a, b, and c." instead of "Our toppings are a, b, c"
