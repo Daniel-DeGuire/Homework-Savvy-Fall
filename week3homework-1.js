@@ -23,7 +23,7 @@ i.e. "One large thick crust pizza with x, y, z, ... coming up!" outputs a list w
 function getPizzaOrder() {
   if (pizzaToppings.length > 0);
   for (let pizzaToppings = 0; pizzaToppings < 5; pizzaToppings++);
-    console.log("Coming up: " + pizzaSize + pizzaCrust + pizzaToppings);
+  return "Coming up: " + pizzaSize + pizzaCrust + pizzaToppings
 }
 console.log(getPizzaOrder())
 
