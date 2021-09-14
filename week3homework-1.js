@@ -33,7 +33,6 @@ let custOrder = getPizzaOrder(
   pizzaToppings[1],
   pizzaToppings[2]
 );
-
 /* Create a preparePizza function that has an array as its parameter with three items: a size, a crust, and a list of toppings
 prints something like "...Cooking pizza..." outputs a pizza Object with appropriate key-value pairs for size, crust, and toppings. */
 
@@ -45,7 +44,7 @@ function preparePizza(pizzaSize, pizzaCrust, pizzaToppings){
 i.e. "Order up! Here's your large thick crust pizza with x, y, z, ... Enjoy!" outputs the same pizza Object that was passed in */
 
 function servePizza() {
-  console.log(`Order up! Here is your ${order1} pizza...Enjoy!`);
+  console.log(`Order up! Here is your ${custOrder} pizza...Enjoy!`);
   return getPizzaOrder;
 };
 
