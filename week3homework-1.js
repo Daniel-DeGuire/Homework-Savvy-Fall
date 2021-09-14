@@ -1,7 +1,8 @@
 // Create an array of pizzaToppings with at least four different toppings
 
 const pizzaToppings = ["bacon", "sausage", "onions", "black olives"];
-
+const pizzaSize = ["large", "medium"];
+const pizzaCrust = ["thick", "thin"];
 
 /* Create a greetCustomer function that prints a message that welcomes a guest, then informs them of the available toppings
 by looping over pizzaToppings (don't worry about perfect grammar here yet, i.e. "a, b, and c", see Bonus Challenge #9)
@@ -21,31 +22,31 @@ console.log(greetCustomer());
 /* Create a getPizzaOrder function that has the parameters size, crust, and an indefinite amount of toppings as inputs prints the order,
 i.e. "One large thick crust pizza with x, y, z, ... coming up!" outputs a list with the size, crust, and toppings. */
 
-function getPizzaOrder(pizzaSize, pizzaCrust, pizzaToppings){
+function getPizzaOrder(pizzaSize, pizzaCrust, ...pizzaToppings){
   console.log(`One ${pizzaSize} ${pizzaCrust} crust pizza with ${pizzaToppings} coming up!`);
-  return [pizzaSize, pizzaCrust, pizzaToppings];
-};
-
-console.log(getPizzaOrder())
-
-
+  return pizzaSize + pizzaCrust + pizzaToppings;
+}
+let custOrder = getPizzaOrder(
+  pizzaSize[2],
+  pizzaCrust[1],
+  pizzaToppings[0],
+  pizzaToppings[1],
+  pizzaToppings[2]
+);
 
 /* Create a preparePizza function that has an array as its parameter with three items: a size, a crust, and a list of toppings
 prints something like "...Cooking pizza..." outputs a pizza Object with appropriate key-value pairs for size, crust, and toppings. */
 
 function preparePizza(pizzaSize, pizzaCrust, pizzaToppings){
   console.log("...Cooking pizza...");
-
-  return {size: pizzaSize, crust: pizzaCrust, toppings: pizzaToppings};
-};
-  console.log(preparePizza());
+  return getPizzaOrder;};
 
 /* Create a servePizza function that has a parameter of a pizza Object logs a message that the pizza is ready and repeats the order,
 i.e. "Order up! Here's your large thick crust pizza with x, y, z, ... Enjoy!" outputs the same pizza Object that was passed in */
 
-function servePizza({size: pizzaSize, crust: pizzaCrust, toppings: pizzaToppings}){
-  console.log(`Order up! Here's your ${pizzaSize} ${pizzaCrust} crust pizza with ${pizzaToppings}. Enjoy!`);
-  return {size: pizzaSize, crust: pizzaCrust, toppings: pizzaToppings};
+function servePizza() {
+  console.log(`Order up! Here is your ${order1} pizza...Enjoy!`);
+  return getPizzaOrder;
 };
 
 // Call each function and (starting with preparePizza) use the returned value from the previous function as its input
