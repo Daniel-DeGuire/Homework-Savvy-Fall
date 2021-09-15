@@ -1,0 +1,22 @@
+* {
+    width: 90%;
+    background-color: rgb(120, 165, 151);
+    margin-bottom: 40px;
+    padding-top: 5px;
+    padding-right: 50px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+}
+body {
+    margin: 25px;
+    background-color: rgb(12, 48, 114);
+    font-family: arial, sans-serif;
+    font-size: 14px;
+}
+.services { 
+    color: rgb(4, 0, 255); 
+    background-color: rgb(166, 192, 186);
+    margin: auto;
+    justr
+    font-weight: bold;
+}
