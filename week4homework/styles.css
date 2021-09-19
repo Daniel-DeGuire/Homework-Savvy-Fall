@@ -1,0 +1,20 @@
+body {
+  background-color: lightgrey;
+  width: 1000px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+.center {
+  text-align: center;
+  border: 3px solid green;
+}
+#para {
+  text-align: left;
+  color: rgb(25, 0, 255);
+}
+div > p {
+  background-color: green;
+  color: white;
+  text-align: center
+
