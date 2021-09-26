@@ -605,13 +605,13 @@ const userPostData =
 
   // create a list of user 5's posts
 
-const userFivePosts = userPostData.filter((task) => task.userId === 5);
+/* const userFivePosts = userPostData.filter((task) => task.userId === 5);
 console.log(userFivePosts); 
-
+ */
 
   //then, create a list of title and body pairs
 
-  const titleAndBody = [];
+   const titleAndBody = [];
   userPostData.forEach((userPostData)=> {
       let title = userPostData.title;
       let body = userPostData.body;
@@ -619,3 +619,9 @@ console.log(userFivePosts);
       titleAndBody.push(titleAndBodyPair);
       });
       console.log(titleAndBody); 
+ 
+
+const titleAndBody1 = userPostData.map(user =>
+        { return [user.title, user.body] }
+        );
+        console.log(titleAndBody1) 
